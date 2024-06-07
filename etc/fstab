@@ -1,0 +1,25 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sdb2
+UUID=95e60548-4e5b-4a0a-af82-ad9b5e4f051d	/         	xfs       	rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota	0 1
+
+# /dev/sdb1
+UUID=A6F4-A775      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+/swapfile none swap sw,pri=1 0 0
+
+# /dev/sda1
+/dev/sda1 /home btrfs defaults,compress=lzo 0 0
+
+#/home/Jerry/HDD/swapfile none swap sw 0 0
+
+#bind
+#/home/Jerry/HDD/Euro\040Truck\040Simulator\0402 /home/Jerry/.local/share/Euro\040Truck\040Simulator\0402 none bind 0 0
+
+#/home/Jerry/HDD/wine /home/Jerry/.wine none bind 0 0
+
+#/home/Jerry/HDD/wineprefixes /home/Jerry/.local/share/wineprefixes none bind 0 0
+
+#/home/Jerry/HDD/BindFolders/truckersmp-cli /home/Jerry/.local/share/truckersmp-cli none bind 0 0
