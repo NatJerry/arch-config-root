@@ -1,0 +1,9 @@
+[Unit]
+Description=Use a modify sysctl config
+After=default.target
+
+[Service]
+ExecStart=/sbin/sysctl -p
+
+[Install]
+WantedBy=default.target
